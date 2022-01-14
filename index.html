@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Test</title>
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body style="margin: 0% !important;">
+    <div class="container">
+    <div id="sideNav">
+        <div id="logo">
+            <img src="./img/logo.png" alt="site logo">
+        </div>
+        <div id="scroll-arrow">
+            <a href=""><i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div id="link-list">
+            <ul>
+                <li><a href=""><i class="fas fa-tachometer-alt"></i></a></li>
+                <li><a href=""><i class="fas fa-bullhorn"></i></i></a></li>
+                <li><a href=""><i class="fas fa-mail-bulk"></i></a></li>
+                <li><a href=""><i class="fas fa-users"></i></a></li>
+                <li><a href=""><i class="fas fa-chart-pie"></i></a></li>
+            </ul>
+
+        </div>
+        <div id="profile">
+            <a href=""><i class="fas fa-user-circle"></i></a>
+
+        </div>
+
+    </div>
+    <div id="main-content">
+
+    </div>
+
+</div>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    img{
+        width: 60px;
+        height: auto;
+        padding-left:10%;
+        padding-top: 20%;
+    }
+    body{
+        margin: 0%;
+    }
+    .container{
+        display: flex;
+        align-items: row;
+    }
+    #main-content{
+        width: 94.5%;
+        background-color: white;
+    }
+    #sideNav{
+        width: 5.5%;
+        background-color: white;
+        height: 100vh;
+        border-right: 3px solid #55abd9;
+
+    }
+    #link-list{
+        width: auto;
+        height: 25%;
+        padding-top: 15%;
+    }
+  
+    #link-list i {
+        color: #55abd9;
+        list-style: none;
+        text-decoration: none;
+        font-size: 32px;
+        
+    }
+    #link-list ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+        
+    }
+    #link-list li {
+        list-style: none;
+        margin-bottom: 22px;
+        
+    
+    }
+    #logo {
+        width: auto;
+        height: 11%;
+        
+    }
+    
+    #profile{
+        width: auto;
+        height: 56%;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    #profile a {
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #profile i {
+        color: #55abd9;
+        font-size: 32px;
+        text-decoration: none;
+    }
+    #scroll-arrow{
+    border: 2px solid #55abd9;
+    border-radius: 50%;
+    width:15px;
+    display: flex;
+    position: relative;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 15px;
+    margin-right: -12px;
+    z-index: 10;
+    background-color: white;
+    }
+    #scroll-arrow i {
+        color: #55abd9;
+
+    }
+
+
+</style>
+</body>
+</html>
