@@ -7,8 +7,12 @@
     <title>Code Test</title>
     <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pagestyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 </head>
 <body style="margin: 0% !important;">
     <div class="container">
@@ -16,9 +20,11 @@
         <div id="logo">
             <img src="./img/logo.png" alt="site logo">
         </div>
+        <div id="arrow-div">
         <div id="scroll-arrow">
             <a href=""><i class="fas fa-chevron-right"></i></a>
         </div>
+    </div>
         
         <div id="link-list">
             <ul>
@@ -41,104 +47,16 @@
     </div>
 
 </div>
+<script>
+  $("#scroll-arrow").click.toggle(function() {
+  alert( "First handler for .toggle() called." );
+}, function() {
+  alert( "Second handler for .toggle() called." );
+});
+
+</script>
 <style>
-    html{
-        scroll-behavior: smooth;
-    }
-    img{
-        width: 60px;
-        height: auto;
-        padding-left:10%;
-        padding-top: 20%;
-    }
-    body{
-        margin: 0%;
-    }
-    .container{
-        display: flex;
-        align-items: row;
-    }
-    #main-content{
-        width: 94.5%;
-        background-color: white;
-    }
-    #sideNav{
-        width: 5.5%;
-        background-color: white;
-        height: 100vh;
-        border-right: 3px solid #55abd9;
-
-    }
-    #link-list{
-        width: auto;
-        height: 25%;
-        padding-top: 15%;
-    }
-  
-    #link-list i {
-        color: #55abd9;
-        list-style: none;
-        text-decoration: none;
-        font-size: 32px;
-        
-    }
-    #link-list ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        
-        
-    }
-    #link-list li {
-        list-style: none;
-        margin-bottom: 22px;
-        
     
-    }
-    #logo {
-        width: auto;
-        height: 11%;
-        
-    }
-    
-    #profile{
-        width: auto;
-        height: 56%;
-        display: flex;
-        flex-direction: column-reverse;
-        
-    }
-    #profile a {
-        margin-bottom: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #profile i {
-        color: #55abd9;
-        font-size: 32px;
-        text-decoration: none;
-    }
-    #scroll-arrow{
-    border: 2px solid #55abd9;
-    border-radius: 50%;
-    width:15px;
-    display: flex;
-    position: relative;
-    font-size: 10px;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    height: 15px;
-    margin-right: -12px;
-    z-index: 10;
-    background-color: white;
-    }
-    #scroll-arrow i {
-        color: #55abd9;
-
-    }
 
 
 </style>
